@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.t{fill:#a3b18a}.l{fill:#588157}.r{fill:#344e41}@media (prefers-color-scheme:dark){.t{fill:#b9c8a2}.l{fill:#6f9a6c}.r{fill:#3f6150}}</style>
+<path class="t" d="M32 2.0L43.7 8.8L32 15.5L20.3 8.8Z"/>
+<path class="l" d="M20.3 22.3L32 29.0L32 15.5L20.3 8.8Z"/>
+<path class="r" d="M43.7 22.3L32 29.0L32 15.5L43.7 8.8Z"/>
+<path class="t" d="M17.7 26.7L29.4 33.5L17.7 40.2L6 33.5Z"/>
+<path class="l" d="M6 47.0L17.7 53.8L17.7 40.2L6 33.5Z"/>
+<path class="r" d="M29.4 47.0L17.7 53.8L17.7 40.2L29.4 33.5Z"/>
+<path class="t" d="M46.3 26.7L58 33.5L46.3 40.2L34.6 33.5Z"/>
+<path class="l" d="M34.6 47.0L46.3 53.8L46.3 40.2L34.6 33.5Z"/>
+<path class="r" d="M58 47.0L46.3 53.8L46.3 40.2L58 33.5Z"/>
+<path class="t" d="M17.7 10.2L29.4 17.0L17.7 23.8L6 17.0Z"/>
+<path class="l" d="M6 30.5L17.7 37.3L17.7 23.8L6 17.0Z"/>
+<path class="r" d="M29.4 30.5L17.7 37.3L17.7 23.8L29.4 17.0Z"/>
+<path class="t" d="M46.3 10.2L58 17.0L46.3 23.8L34.6 17.0Z"/>
+<path class="l" d="M34.6 30.5L46.3 37.3L46.3 23.8L34.6 17.0Z"/>
+<path class="r" d="M58 30.5L46.3 37.3L46.3 23.8L58 17.0Z"/>
+<path class="t" d="M32 35.0L43.7 41.7L32 48.5L20.3 41.7Z"/>
+<path class="l" d="M20.3 55.2L32 62.0L32 48.5L20.3 41.7Z"/>
+<path class="r" d="M43.7 55.2L32 62.0L32 48.5L43.7 41.7Z"/>
+<path class="t" d="M32 18.5L43.7 25.2L32 32.0L20.3 25.2Z"/>
+<path class="l" d="M20.3 38.8L32 45.5L32 32.0L20.3 25.2Z"/>
+<path class="r" d="M43.7 38.8L32 45.5L32 32.0L43.7 25.2Z"/>
+</svg>
