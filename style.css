@@ -264,6 +264,14 @@ main section { padding-block: 4rem; scroll-margin-top: 4.5rem; }
 .contact .actions { justify-content: center; }
 .mail-line { margin-top: 1.25rem; color: var(--muted); font-size: 0.95rem; }
 
+/* Policy page */
+.policy { max-width: 44rem; }
+.policy h1 { font-size: clamp(2.25rem, 6vw, 3.25rem); }
+.policy h2 { font-size: clamp(1.35rem, 4vw, 1.65rem); margin-top: 2.5rem; }
+.policy ul { padding-left: 1.25rem; }
+.policy li { margin-bottom: 0.5rem; }
+.policy li::marker { color: var(--cube-l); }
+
 /* Footer */
 .site-footer {
   padding-block: 2.5rem;
