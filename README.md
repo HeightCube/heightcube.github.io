@@ -24,7 +24,7 @@ Plain HTML and CSS, no build step, no external requests.
   French text uses a no-break space before `:`, `?` and `!`.
 - **Two lines of apps:** the Apps section first shows the two lines side by side (`.tiers`): apps
   **for kids** (no ads, no in-app purchases, no internet, nothing collected) and **games** (free to
-  play, supported by ads or in-app purchases). Then one card per app (`article.card.app`,
+  play, supported by ads and in-app purchases). Then one card per app (`article.card.app`,
   `#kids` and `#games`). The no-ads / no-data promises belong to the kids line only, here and in
   the privacy policy; don't state them for the whole studio.
 - **The game:** its name is to be announced (placeholder card `#games`). Before it is released,
