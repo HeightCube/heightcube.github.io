@@ -8,6 +8,7 @@
   --muted: #4a5d50;
   --line: #d5dfcb;
   --link: #8e5236;
+  --label: #3a5a40;
   --btn: #c9a27e;
   --btn-hover: #bc916a;
   --btn-text: #1f2e26;
@@ -33,6 +34,7 @@
     --muted: #b4c2ae;
     --line: #2f4537;
     --link: #dcb894;
+    --label: #b9c8a2;
     --btn: #c9a27e;
     --btn-hover: #d8b593;
     --btn-text: #16211b;
@@ -246,9 +248,37 @@ main section { padding-block: 4rem; scroll-margin-top: 4.5rem; }
   font-size: 0.85rem;
   font-weight: 650;
 }
+/* Apps: the two lines, then one card per app */
+.tiers {
+  display: grid;
+  gap: 1.25rem;
+  margin: 2rem 0 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 48em) { .tiers { grid-template-columns: repeat(2, 1fr); } }
+.tier {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.tier p:not(.tier-label) { color: var(--muted); }
+.tier-label {
+  margin-bottom: 0.4rem;
+  color: var(--label);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.app + .app { margin-top: 2rem; }
+.app-head h3 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; margin-bottom: 0.2em; }
+.app-head .tier-label { margin-bottom: 0.2rem; }
+h4 { font-size: 1.05rem; font-weight: 650; line-height: 1.2; margin: 0 0 0.25em; }
+
 /* App card */
 .app-head { display: flex; align-items: center; gap: 1rem 1.25rem; margin-bottom: 1.25rem; }
-.app-head h2 { margin-bottom: 0.2em; }
 .app-icon {
   width: clamp(4rem, 14vw, 5.5rem);
   height: auto;
@@ -257,6 +287,7 @@ main section { padding-block: 4rem; scroll-margin-top: 4.5rem; }
   box-shadow: var(--shadow);
 }
 .app-tagline { margin: 0; color: var(--muted); }
+.app-icon-tba { aspect-ratio: 1; padding: 0.85rem; background: var(--surface-2); box-shadow: none; }
 .shots {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -291,35 +322,7 @@ main section { padding-block: 4rem; scroll-margin-top: 4.5rem; }
 }
 .points svg { width: 1.75rem; height: auto; flex: none; margin-top: 0.15rem; }
 .points p { margin: 0; color: var(--muted); }
-@media (min-width: 48em) { /* App card */
-.app-head { display: flex; align-items: center; gap: 1rem 1.25rem; margin-bottom: 1.25rem; }
-.app-head h2 { margin-bottom: 0.2em; }
-.app-icon {
-  width: clamp(4rem, 14vw, 5.5rem);
-  height: auto;
-  flex: none;
-  border-radius: 22%;
-  box-shadow: var(--shadow);
-}
-.app-tagline { margin: 0; color: var(--muted); }
-.shots {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(0.5rem, 2vw, 1.25rem);
-  max-width: 44rem;
-  margin: 2rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-.shots img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0.75rem;
-  box-shadow: var(--shadow);
-}
-
-.points { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 48em) { .points { grid-template-columns: repeat(3, 1fr); } }
 
 /* Contact */
 .contact { text-align: center; }

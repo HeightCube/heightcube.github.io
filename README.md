@@ -22,6 +22,14 @@ Plain HTML and CSS, no build step, no external requests.
   load shared files with `../` (`../style.css`, `../site.js`, `../apps/...`). Each page links its
   other-language twin in the header (the EN/FR link) and in `<link rel="alternate" hreflang>`.
   French text uses a no-break space before `:`, `?` and `!`.
+- **Two lines of apps:** the Apps section first shows the two lines side by side (`.tiers`): apps
+  **for kids** (no ads, no in-app purchases, no internet, nothing collected) and **games** (free to
+  play, supported by ads or in-app purchases). Then one card per app (`article.card.app`,
+  `#kids` and `#games`). The no-ads / no-data promises belong to the kids line only, here and in
+  the privacy policy; don't state them for the whole studio.
+- **The game:** its name is to be announced (placeholder card `#games`). Before it is released,
+  fill in section 3 of the privacy policy (both languages) with the ad and payment services it
+  uses and the data they process.
 - **App screenshots:** 540×960 WebP, made from the store screenshots in the app's repo
   (`store-assets/screenshots/<lang>/`). Update the `alt` texts if the pictures change.
 - **Google Play link:** FlagQuest 4 Kids is marked "Coming soon" (`badge` in the Apps card) until the
