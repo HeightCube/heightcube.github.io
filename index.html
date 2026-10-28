@@ -14,7 +14,11 @@
   <meta property="og:description" content="An independent studio based in Geneva, building Android apps with love.">
   <meta property="og:url" content="https://heightcube.github.io/">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_CH">
   <link rel="canonical" href="https://heightcube.github.io/">
+  <link rel="alternate" hreflang="en" href="https://heightcube.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://heightcube.github.io/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://heightcube.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.className = 'js';</script>
@@ -64,10 +68,11 @@
       </a>
       <nav class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
+          <li class="nav-about"><a href="#about">About</a></li>
+          <li><a href="#apps">Apps</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#privacy">Privacy</a></li>
+          <li><a class="lang" href="fr/" hreflang="fr" lang="fr" aria-label="Version française">FR</a></li>
         </ul>
       </nav>
     </div>
@@ -80,7 +85,7 @@
         <h1 id="hero-title">HeightCube</h1>
         <p class="lead">An independent studio based in Geneva, building Android apps with love.</p>
         <div class="actions">
-          <a class="btn" href="#project">See what’s in the works</a>
+          <a class="btn" href="#apps">Meet FlagQuest 4 Kids</a>
           <a class="btn btn-quiet" href="#contact">Say hello</a>
         </div>
       </div>
@@ -101,25 +106,38 @@
       </div>
     </section>
 
-    <section id="project" class="wrap" aria-labelledby="project-title">
-      <div class="card">
-        <span class="badge">In the works</span>
-        <h2 id="project-title">A gentle app for kids</h2>
-        <div class="prose">
-          <p>We are crafting a standalone app for children: something they can open, enjoy and put down, with nothing happening behind the scenes. It is still taking shape, and we are taking our time to get it right.</p>
+    <section id="apps" class="wrap" aria-labelledby="apps-title">
+      <p class="eyebrow">Our app</p>
+      <div class="card app">
+        <div class="app-head">
+          <img class="app-icon" src="apps/flagquest/icon.png" width="512" height="512" alt="">
+          <div>
+            <h2 id="apps-title">FlagQuest 4 Kids</h2>
+            <p class="app-tagline">A geography quiz for kids: flags, shapes, capitals and maps.</p>
+          </div>
         </div>
+        <span class="badge">Coming soon to Google Play</span>
+        <div class="prose">
+          <p>Explore the world, one flag at a time. Short rounds get harder as your child improves, and the app remembers which countries each player still needs to practise. After every answer, a fact card shows the flag, the shape, the country on the world map, its capital and its neighbours.</p>
+          <p>Ten ways to play, all 198 countries, several players on one phone, 46 badges to collect, questions read aloud for younger players. In English and French.</p>
+        </div>
+        <ul class="shots">
+          <li><img src="apps/flagquest/en/question.webp" width="540" height="960" loading="lazy" alt="A flag question: which country has this flag? Three answers to choose from."></li>
+          <li><img src="apps/flagquest/en/feedback.webp" width="540" height="960" loading="lazy" alt="After the answer: the flag, the shape and the country highlighted on the world map."></li>
+          <li><img src="apps/flagquest/en/map.webp" width="540" height="960" loading="lazy" alt="Find the country on the map: three world maps, pick the one where Libya is highlighted."></li>
+        </ul>
         <ul class="points">
           <li>
             <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
-            <div><h3>No ads</h3><p>Nothing to tap by accident, nothing to sell.</p></div>
+            <div><h3>No ads</h3><p>No ads, no in-app purchases, no accounts.</p></div>
           </li>
           <li>
             <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
-            <div><h3>No internet needed</h3><p>Works fully offline, on a plane or at grandma’s.</p></div>
+            <div><h3>No internet needed</h3><p>The app has no internet access at all. It works on a plane or at grandma’s.</p></div>
           </li>
           <li>
             <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
-            <div><h3>No tracking</h3><p>No data collection. Nothing leaves the device.</p></div>
+            <div><h3>No tracking</h3><p>Nothing is collected. Progress stays on the phone.</p></div>
           </li>
         </ul>
       </div>
@@ -128,7 +146,7 @@
     <section id="contact" class="wrap contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Say hello</h2>
       <div class="prose">
-        <p>Questions, ideas, or just curious when the kids app will be ready? We would love to hear from you.</p>
+        <p>Questions, ideas, or feedback about FlagQuest 4 Kids? We would love to hear from you.</p>
       </div>
       <div class="actions">
         <a class="btn" href="#contact" data-mail>Say hello</a>
@@ -153,76 +171,6 @@
     </div>
   </footer>
 
-  <script>
-    // Assemble the email address at runtime to keep it away from simple scrapers.
-    (function () {
-      var addr = ['heightcube', 'website'].join('+') + '@' + ['gmail', 'com'].join('.');
-      document.querySelectorAll('[data-mail]').forEach(function (a) {
-        a.href = 'mailto:' + addr;
-        if (a.hasAttribute('data-mail-text')) a.textContent = addr;
-      });
-    })();
-
-    // Barnsley fern, colored from the CSS palette. Grows in gently unless reduced motion is set.
-    (function () {
-      var canvas = document.getElementById('fern');
-      if (!canvas || !canvas.getContext) return;
-      var ctx = canvas.getContext('2d');
-      var reduce = matchMedia('(prefers-reduced-motion: reduce)');
-      var dark = matchMedia('(prefers-color-scheme: dark)');
-      var TOTAL = 90000, STEP = 1500, frame = 0, width = 0;
-
-      function rgb(name) {
-        var h = getComputedStyle(document.documentElement).getPropertyValue(name).trim().slice(1);
-        return [0, 2, 4].map(function (i) { return parseInt(h.substr(i, 2), 16); });
-      }
-
-      function draw() {
-        cancelAnimationFrame(frame);
-        var dpr = Math.min(window.devicePixelRatio || 1, 2);
-        var w = canvas.width = Math.round(canvas.clientWidth * dpr);
-        var h = canvas.height = Math.round(canvas.clientHeight * dpr);
-        width = canvas.clientWidth;
-        var img = ctx.createImageData(w, h), px = img.data;
-        var a = rgb('--fern-a'), b = rgb('--fern-b');
-        var scale = Math.min(w / 6, h / 11.2), ox = w / 2 - 0.24 * scale, oy = h - 0.6 * scale;
-        var x = 0, y = 0, n = 0;
-
-        function plot(count) {
-          for (var i = 0; i < count; i++) {
-            var r = Math.random(), nx;
-            if (r < 0.01) { nx = 0; y = 0.16 * y; }
-            else if (r < 0.86) { nx = 0.85 * x + 0.04 * y; y = -0.04 * x + 0.85 * y + 1.6; }
-            else if (r < 0.93) { nx = 0.2 * x - 0.26 * y; y = 0.23 * x + 0.22 * y + 1.6; }
-            else { nx = -0.15 * x + 0.28 * y; y = 0.26 * x + 0.24 * y + 0.44; }
-            x = nx;
-            var px_ = Math.round(ox + x * scale), py = Math.round(oy - y * scale);
-            if (px_ < 0 || py < 0 || px_ >= w || py >= h) continue;
-            var t = y / 10, k = (py * w + px_) * 4;
-            px[k] = a[0] + (b[0] - a[0]) * t;
-            px[k + 1] = a[1] + (b[1] - a[1]) * t;
-            px[k + 2] = a[2] + (b[2] - a[2]) * t;
-            px[k + 3] = 255;
-          }
-          n += count;
-          ctx.putImageData(img, 0, 0);
-        }
-
-        if (reduce.matches) { plot(TOTAL); return; }
-        (function grow() {
-          plot(STEP);
-          if (n < TOTAL) frame = requestAnimationFrame(grow);
-        })();
-      }
-
-      draw();
-      var timer;
-      window.addEventListener('resize', function () {
-        clearTimeout(timer);
-        timer = setTimeout(function () { if (canvas.clientWidth !== width) draw(); }, 200);
-      });
-      dark.addEventListener('change', draw);
-    })();
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>

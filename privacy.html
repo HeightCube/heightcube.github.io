@@ -14,7 +14,11 @@
   <meta property="og:description" content="Our apps show no ads, need no internet connection and collect no personal data.">
   <meta property="og:url" content="https://heightcube.github.io/privacy.html">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_CH">
   <link rel="canonical" href="https://heightcube.github.io/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://heightcube.github.io/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://heightcube.github.io/fr/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://heightcube.github.io/privacy.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -51,10 +55,11 @@
       </a>
       <nav class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#project">Project</a></li>
+          <li class="nav-about"><a href="index.html#about">About</a></li>
+          <li><a href="index.html#apps">Apps</a></li>
           <li><a href="index.html#contact">Contact</a></li>
           <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          <li><a class="lang" href="fr/privacy.html" hreflang="fr" lang="fr" aria-label="Version française">FR</a></li>
         </ul>
       </nav>
     </div>
@@ -64,7 +69,7 @@
     <section class="wrap" aria-labelledby="policy-title">
       <article class="policy">
         <h1 id="policy-title">Privacy Policy</h1>
-        <p><strong>Effective date:</strong> 27 October 2026<br>
+        <p><strong>Effective date:</strong> 28 October 2026<br>
         <strong>Controller:</strong> HeightCube, an independent studio based in Geneva, Switzerland. Contact: <a href="index.html#contact" data-mail data-mail-text>heightcube+website (at) gmail (dot) com</a></p>
 
         <h2>1. Summary</h2>
@@ -76,6 +81,7 @@
           <li>We do not collect personal information, device identifiers, location, or usage analytics.</li>
           <li>We do not include advertising, third-party analytics, or tracking SDKs.</li>
           <li>Any data created in an app (for example settings or progress) stays on your device and is removed when you uninstall the app.</li>
+          <li>Some apps let a grown-up save a player’s progress to a file, for example to move it to another phone. The file goes only where you choose to put it.</li>
           <li><strong>Children:</strong> our apps for kids are designed to be safe: no ads, no links out, no accounts, no data collection.</li>
           <li><strong>Distribution:</strong> apps are distributed through Google Play. Google may process data under its own privacy policy when you download or update an app. We do not receive that data in identifiable form.</li>
         </ul>
@@ -108,15 +114,6 @@
     </div>
   </footer>
 
-  <script>
-    // Assemble the email address at runtime to keep it away from simple scrapers.
-    (function () {
-      var addr = ['heightcube', 'website'].join('+') + '@' + ['gmail', 'com'].join('.');
-      document.querySelectorAll('[data-mail]').forEach(function (a) {
-        a.href = 'mailto:' + addr;
-        if (a.hasAttribute('data-mail-text')) a.textContent = addr;
-      });
-    })();
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HeightCube — Studio Android indépendant à Genève</title>
+  <meta name="description" content="HeightCube est un studio indépendant basé à Genève qui crée avec amour des applications Android. Sans publicité, respectueuses de la vie privée et utilisables hors ligne.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#f4f6f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16211b" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HeightCube">
+  <meta property="og:title" content="HeightCube">
+  <meta property="og:description" content="Un studio indépendant basé à Genève qui crée avec amour des applications Android.">
+  <meta property="og:url" content="https://heightcube.github.io/fr/">
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:locale:alternate" content="en_US">
+  <link rel="canonical" href="https://heightcube.github.io/fr/">
+  <link rel="alternate" hreflang="en" href="https://heightcube.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://heightcube.github.io/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://heightcube.github.io/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- Sierpinski triangle building blocks, reused by the decorative SVGs below -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <path id="t0" d="M0 .866L.5 0 1 .866z"/>
+      <g id="t1"><use href="#t0" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t0" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t0" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
+      <g id="t2"><use href="#t1" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t1" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t1" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
+      <g id="t3"><use href="#t2" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t2" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t2" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
+      <g id="t4"><use href="#t3" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t3" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t3" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
+      <g id="t5"><use href="#t4" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t4" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t4" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="HeightCube, retour en haut">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <path class="t" d="M32 2.0L43.7 8.8L32 15.5L20.3 8.8Z"/>
+      <path class="l" d="M20.3 22.3L32 29.0L32 15.5L20.3 8.8Z"/>
+      <path class="r" d="M43.7 22.3L32 29.0L32 15.5L43.7 8.8Z"/>
+      <path class="t" d="M17.7 26.7L29.4 33.5L17.7 40.2L6 33.5Z"/>
+      <path class="l" d="M6 47.0L17.7 53.8L17.7 40.2L6 33.5Z"/>
+      <path class="r" d="M29.4 47.0L17.7 53.8L17.7 40.2L29.4 33.5Z"/>
+      <path class="t" d="M46.3 26.7L58 33.5L46.3 40.2L34.6 33.5Z"/>
+      <path class="l" d="M34.6 47.0L46.3 53.8L46.3 40.2L34.6 33.5Z"/>
+      <path class="r" d="M58 47.0L46.3 53.8L46.3 40.2L58 33.5Z"/>
+      <path class="t" d="M17.7 10.2L29.4 17.0L17.7 23.8L6 17.0Z"/>
+      <path class="l" d="M6 30.5L17.7 37.3L17.7 23.8L6 17.0Z"/>
+      <path class="r" d="M29.4 30.5L17.7 37.3L17.7 23.8L29.4 17.0Z"/>
+      <path class="t" d="M46.3 10.2L58 17.0L46.3 23.8L34.6 17.0Z"/>
+      <path class="l" d="M34.6 30.5L46.3 37.3L46.3 23.8L34.6 17.0Z"/>
+      <path class="r" d="M58 30.5L46.3 37.3L46.3 23.8L58 17.0Z"/>
+      <path class="t" d="M32 35.0L43.7 41.7L32 48.5L20.3 41.7Z"/>
+      <path class="l" d="M20.3 55.2L32 62.0L32 48.5L20.3 41.7Z"/>
+      <path class="r" d="M43.7 55.2L32 62.0L32 48.5L43.7 41.7Z"/>
+      <path class="t" d="M32 18.5L43.7 25.2L32 32.0L20.3 25.2Z"/>
+      <path class="l" d="M20.3 38.8L32 45.5L32 32.0L20.3 25.2Z"/>
+      <path class="r" d="M43.7 38.8L32 45.5L32 32.0L43.7 25.2Z"/>
+        </svg>
+        <span class="brand-name">HeightCube</span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li class="nav-about"><a href="#about">À propos</a></li>
+          <li><a href="#apps">Applis</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#privacy">Vie privée</a></li>
+          <li><a class="lang" href="../" hreflang="en" lang="en" aria-label="English version">EN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="wrap hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Studio indépendant · Genève</p>
+        <h1 id="hero-title">HeightCube</h1>
+        <p class="lead">Un studio indépendant basé à Genève qui crée avec amour des applications Android.</p>
+        <div class="actions">
+          <a class="btn" href="#apps">Découvrir FlagQuest 4 Kids</a>
+          <a class="btn btn-quiet" href="#contact">Nous écrire</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <canvas id="fern" role="img" aria-label="Une fougère de Barnsley, une fractale dessinée en tons vert sauge"></canvas>
+        <svg class="tri-fallback" viewBox="0 0 1 .866" role="img" aria-label="Un triangle de Sierpiński, une fractale vert sauge"><use class="tri" href="#t5"/></svg>
+      </div>
+    </section>
+
+    <div class="wrap divider" aria-hidden="true"><svg viewBox="0 0 1 .866"><use class="tri" href="#t4"/></svg></div>
+
+    <section id="about" class="wrap" aria-labelledby="about-title">
+      <p class="eyebrow">Ce que nous faisons</p>
+      <h2 id="about-title">De petites applis, faites avec soin</h2>
+      <div class="prose">
+        <p>Nous concevons et développons des applications Android sereines, honnêtes et faites pour durer. Chacune fait peu de choses, mais les fait bien, respecte votre attention et fonctionne où que vous soyez.</p>
+        <p>Pas de pièges dans l’interface, pas de publicité, aucune donnée qui quitte discrètement votre téléphone. Simplement des logiciels réfléchis, que nous confierions volontiers à nos propres familles.</p>
+      </div>
+    </section>
+
+    <section id="apps" class="wrap" aria-labelledby="apps-title">
+      <p class="eyebrow">Notre application</p>
+      <div class="card app">
+        <div class="app-head">
+          <img class="app-icon" src="../apps/flagquest/icon.png" width="512" height="512" alt="">
+          <div>
+            <h2 id="apps-title">FlagQuest 4 Kids</h2>
+            <p class="app-tagline">Un quiz de géographie pour les enfants : drapeaux, formes, capitales et cartes.</p>
+          </div>
+        </div>
+        <span class="badge">Bientôt sur Google Play</span>
+        <div class="prose">
+          <p>Explorer le monde, un drapeau à la fois. Les parties sont courtes et deviennent plus difficiles à mesure que votre enfant progresse. L’application retient les pays que chaque joueur doit encore travailler. Après chaque réponse, une fiche montre le drapeau, la forme, le pays sur la carte du monde, sa capitale et ses voisins.</p>
+          <p>Dix façons de jouer, les 198 pays, plusieurs joueurs sur un même téléphone, 46 badges à gagner, des questions lues à voix haute pour les plus jeunes. En français et en anglais.</p>
+        </div>
+        <ul class="shots">
+          <li><img src="../apps/flagquest/fr/question.webp" width="540" height="960" loading="lazy" alt="Une question sur un drapeau : à quel pays appartient ce drapeau ? Trois réponses au choix."></li>
+          <li><img src="../apps/flagquest/fr/feedback.webp" width="540" height="960" loading="lazy" alt="Après la réponse : le drapeau, la forme et le pays mis en évidence sur la carte du monde."></li>
+          <li><img src="../apps/flagquest/fr/map.webp" width="540" height="960" loading="lazy" alt="Trouver le pays sur la carte : trois cartes du monde, choisir celle où l’Islande est mise en évidence."></li>
+        </ul>
+        <ul class="points">
+          <li>
+            <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
+            <div><h3>Sans publicité</h3><p>Pas de publicité, pas d’achat intégré, pas de compte.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
+            <div><h3>Sans internet</h3><p>L’application n’a aucun accès à internet. Elle fonctionne dans l’avion comme chez mamie.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
+            <div><h3>Sans pistage</h3><p>Rien n’est collecté. La progression reste sur le téléphone.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Nous écrire</h2>
+      <div class="prose">
+        <p>Une question, une idée, un avis sur FlagQuest 4 Kids ? Nous serions ravis de vous lire.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#contact" data-mail>Nous écrire</a>
+      </div>
+      <p class="mail-line"><a href="#contact" data-mail data-mail-text>heightcube+website (arobase) gmail (point) com</a></p>
+    </section>
+
+    <div class="wrap divider" aria-hidden="true"><svg viewBox="0 0 1 .866"><use class="tri" href="#t4"/></svg></div>
+
+    <section id="privacy" class="wrap" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Confidentialité</h2>
+      <div class="prose">
+        <p>Pas de publicité, pas besoin d’internet, aucune donnée personnelle collectée, et ni cookies ni traceurs sur ce site. <a href="privacy.html">Lire notre politique de confidentialité</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 HeightCube, Genève, Suisse.</p>
+      <p><a href="privacy.html">Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+  <script src="../site.js"></script>
+</body>
+</html>

@@ -148,6 +148,13 @@ a:hover { text-decoration-thickness: 2px; }
   text-decoration: none;
 }
 .site-nav a:hover { background: var(--surface-2); }
+/* On phones the About section sits right below the hero, so its link makes room for the others. */
+@media (max-width: 29.99em) {
+  .site-nav ul { gap: 0.125rem; }
+  .site-nav a { padding: 0.4rem 0.45rem; }
+  .site-nav .nav-about { display: none; }
+}
+.site-nav .lang { box-shadow: inset 0 0 0 1.5px var(--line); font-weight: 650; }
 @media (min-width: 48em) {
   .site-nav ul { gap: 0.5rem; }
   .site-nav a { padding: 0.45rem 0.8rem; }
@@ -239,6 +246,34 @@ main section { padding-block: 4rem; scroll-margin-top: 4.5rem; }
   font-size: 0.85rem;
   font-weight: 650;
 }
+/* App card */
+.app-head { display: flex; align-items: center; gap: 1rem 1.25rem; margin-bottom: 1.25rem; }
+.app-head h2 { margin-bottom: 0.2em; }
+.app-icon {
+  width: clamp(4rem, 14vw, 5.5rem);
+  height: auto;
+  flex: none;
+  border-radius: 22%;
+  box-shadow: var(--shadow);
+}
+.app-tagline { margin: 0; color: var(--muted); }
+.shots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.5rem, 2vw, 1.25rem);
+  max-width: 44rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
 .points {
   display: grid;
   gap: 1.25rem;
@@ -256,7 +291,35 @@ main section { padding-block: 4rem; scroll-margin-top: 4.5rem; }
 }
 .points svg { width: 1.75rem; height: auto; flex: none; margin-top: 0.15rem; }
 .points p { margin: 0; color: var(--muted); }
-@media (min-width: 48em) { .points { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 48em) { /* App card */
+.app-head { display: flex; align-items: center; gap: 1rem 1.25rem; margin-bottom: 1.25rem; }
+.app-head h2 { margin-bottom: 0.2em; }
+.app-icon {
+  width: clamp(4rem, 14vw, 5.5rem);
+  height: auto;
+  flex: none;
+  border-radius: 22%;
+  box-shadow: var(--shadow);
+}
+.app-tagline { margin: 0; color: var(--muted); }
+.shots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.5rem, 2vw, 1.25rem);
+  max-width: 44rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.points { grid-template-columns: repeat(3, 1fr); } }
 
 /* Contact */
 .contact { text-align: center; }
