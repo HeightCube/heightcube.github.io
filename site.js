@@ -1,4 +1,4 @@
-// Shared by every page (English and French).
+// Shared by every page (English, French, and the German privacy page).
 
 // Assemble the email address at runtime to keep it away from simple scrapers.
 (function () {

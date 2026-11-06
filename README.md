@@ -8,6 +8,7 @@ Plain HTML and CSS, no build step, no external requests.
 - `index.html` — the whole page: header, hero, sections, footer.
 - `privacy.html` — the full privacy policy, with the same header and footer as `index.html`.
 - `fr/index.html`, `fr/privacy.html` — the French versions of both pages.
+- `de/privacy.html` — the German privacy policy (there is no German home page: its header links go to the English `index.html`). Keep it in step with `privacy.html`; German uses the email fallback `(at)` / `(Punkt)`. The EN and FR privacy pages link it (DE in the header, `hreflang="de"`).
 - `site.js` — the email script and the hero fern, shared by every page.
 - `style.css` — all styles, including colors and dark mode.
 - `favicon.svg` — the logo used as the browser icon.
@@ -41,7 +42,7 @@ Plain HTML and CSS, no build step, no external requests.
   (`['heightcube', 'website'].join('+') + '@' + ...`) so it is not in the HTML as plain text.
   Update that line, and the `(at)` / `(dot)` (French: `(arobase)` / `(point)`) fallback text
   inside the `data-mail` links of every page.
-- **Privacy policy:** edit `privacy.html`, and update the effective date when you change it.
+- **Privacy policy:** edit `privacy.html`, `fr/privacy.html` and `de/privacy.html` together, and update the effective date in all three when you change it.
   The header and footer are copied from `index.html`; keep the pages in sync.
 - **Logo:** the cube paths appear inline in the header of every page, and in `favicon.svg`.
   Change them all together.
