@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="fr" class="no-js">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HeightCube — Studio Android indépendant à Genève</title>
   <meta name="description" content="HeightCube est un studio indépendant basé à Genève qui crée avec amour des applications Android. Des applis sans publicité pour les enfants, et des jeux gratuits.">
   <meta name="referrer" content="no-referrer">
-  <meta name="theme-color" content="#f4f6f1" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#16211b" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111915" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="HeightCube">
   <meta property="og:title" content="HeightCube">
@@ -21,22 +21,9 @@
   <link rel="alternate" hreflang="x-default" href="https://heightcube.github.io/">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
-  <script>document.documentElement.className = 'js';</script>
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
-
-  <!-- Sierpinski triangle building blocks, reused by the decorative SVGs below -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <defs>
-      <path id="t0" d="M0 .866L.5 0 1 .866z"/>
-      <g id="t1"><use href="#t0" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t0" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t0" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
-      <g id="t2"><use href="#t1" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t1" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t1" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
-      <g id="t3"><use href="#t2" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t2" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t2" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
-      <g id="t4"><use href="#t3" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t3" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t3" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
-      <g id="t5"><use href="#t4" transform="matrix(.5 0 0 .5 .25 0)"/><use href="#t4" transform="matrix(.5 0 0 .5 0 .433)"/><use href="#t4" transform="matrix(.5 0 0 .5 .5 .433)"/></g>
-    </defs>
-  </svg>
 
   <header class="site-header">
     <div class="wrap">
@@ -81,49 +68,48 @@
   <main id="main">
     <section id="top" class="wrap hero" aria-labelledby="hero-title">
       <div>
-        <p class="eyebrow">Studio indépendant · Genève</p>
+        <p class="eyebrow">Applis et jeux Android · Genève</p>
         <h1 id="hero-title">HeightCube</h1>
-        <p class="lead">Un studio indépendant basé à Genève qui crée avec amour des applications Android.</p>
+        <p class="lead">Des applis sans publicité pour les enfants et des jeux gratuits, créés avec amour par un studio indépendant.</p>
         <div class="actions">
           <a class="btn" href="#apps">Voir nos applications</a>
           <a class="btn btn-quiet" href="#contact">Nous écrire</a>
         </div>
       </div>
       <div class="hero-art">
-        <canvas id="fern" role="img" aria-label="Une fougère de Barnsley, une fractale dessinée en tons vert sauge"></canvas>
-        <svg class="tri-fallback" viewBox="0 0 1 .866" role="img" aria-label="Un triangle de Sierpiński, une fractale vert sauge"><use class="tri" href="#t5"/></svg>
+        <img src="../favicon.svg" width="64" height="64" alt="">
       </div>
     </section>
 
-    <div class="wrap divider" aria-hidden="true"><svg viewBox="0 0 1 .866"><use class="tri" href="#t4"/></svg></div>
-
-    <section id="about" class="wrap" aria-labelledby="about-title">
-      <p class="eyebrow">Ce que nous faisons</p>
-      <h2 id="about-title">De petites applis, faites avec soin</h2>
+    <section id="about" class="wrap split" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">Ce que nous faisons</p>
+        <h2 id="about-title">De petites applis, faites avec soin</h2>
+      </div>
       <div class="prose">
         <p>Nous concevons et développons des applications Android sereines, honnêtes et faites pour durer. Chacune fait peu de choses, mais les fait bien, respecte votre attention et fonctionne où que vous soyez.</p>
         <p>Pas de pièges dans l’interface, pas d’astuces. Nos applis pour enfants vont plus loin : pas de publicité, aucune donnée qui quitte discrètement le téléphone. Simplement des logiciels réfléchis, que nous confierions volontiers à nos propres familles.</p>
       </div>
     </section>
 
-    <section id="apps" class="wrap" aria-labelledby="apps-title">
-      <p class="eyebrow">Nos applications</p>
-      <h2 id="apps-title">Deux familles d’applications</h2>
-      <div class="prose">
+    <section id="apps" class="wrap band" aria-labelledby="apps-title">
+      <div class="section-head">
+        <p class="eyebrow">Nos applications</p>
+        <h2 id="apps-title">Deux familles d’applications</h2>
         <p>Nous créons deux familles d’applications, chacune avec sa propre promesse, pour que vous sachiez toujours à quoi vous attendre.</p>
       </div>
       <ul class="tiers">
         <li class="tier">
           <p class="tier-label">Pour les enfants</p>
           <h3>Sans publicité, pour une expérience épurée</h3>
-          <p>Pas de publicité, pas d’achat intégré, pas besoin d’internet et rien n’est collecté. Des applis qu’un enfant ouvre, apprécie et referme.</p>
+          <p>Pas de publicité, rien n’est collecté : des applis sereines qu’un enfant ouvre, apprécie et referme.</p>
           <a href="#kids">Découvrir FlagQuest 4 Kids</a>
         </li>
         <li class="tier">
           <p class="tier-label">Jeux</p>
           <h3>Gratuits</h3>
-          <p>Des jeux gratuits à télécharger, financés par la publicité et des achats intégrés, faits avec le même soin. Le premier est en préparation.</p>
-          <a href="#games">À propos du jeu à venir</a>
+          <p>Des jeux gratuits à télécharger, financés par la publicité et des achats intégrés, faits avec le même soin. Le premier, Ace of Shapes, arrive bientôt.</p>
+          <a href="#games">À propos d’Ace of Shapes</a>
         </li>
       </ul>
 
@@ -136,72 +122,93 @@
             <p class="app-tagline">Un quiz de géographie pour les enfants : drapeaux, formes, capitales et cartes.</p>
           </div>
         </div>
-        <span class="badge">Bientôt sur Google Play</span>
-        <div class="prose">
-          <p>Explorer le monde, un drapeau à la fois. Les parties sont courtes et deviennent plus difficiles à mesure que votre enfant progresse. L’application retient les pays que chaque joueur doit encore travailler. Après chaque réponse, une fiche montre le drapeau, la forme, le pays sur la carte du monde, sa capitale et ses voisins.</p>
-          <p>Dix façons de jouer, les 198 pays, plusieurs joueurs sur un même téléphone, 46 badges à gagner, des questions lues à voix haute pour les plus jeunes. En français et en anglais.</p>
+        <div class="app-body">
+          <div>
+            <span class="badge">Bientôt sur Google Play</span>
+            <div class="prose">
+              <p>Explorer le monde, un drapeau à la fois. Les parties sont courtes et deviennent plus difficiles à mesure que votre enfant progresse. L’application retient les pays que chaque joueur doit encore travailler. Après chaque réponse, une fiche montre le drapeau, la forme, le pays sur la carte du monde, sa capitale et ses voisins.</p>
+              <p>Dix façons de jouer, les 198 pays, plusieurs joueurs sur un même téléphone, 46 badges à gagner, des questions lues à voix haute pour les plus jeunes. En français et en anglais.</p>
+            </div>
+          </div>
+          <ul class="shots">
+            <li><img src="../apps/flagquest/fr/question.webp" width="540" height="960" loading="lazy" alt="Une question sur un drapeau : à quel pays appartient ce drapeau ? Trois réponses au choix."></li>
+            <li><img src="../apps/flagquest/fr/feedback.webp" width="540" height="960" loading="lazy" alt="Après la réponse : le drapeau, la forme et le pays mis en évidence sur la carte du monde."></li>
+            <li><img src="../apps/flagquest/fr/map.webp" width="540" height="960" loading="lazy" alt="Trouver le pays sur la carte : trois cartes du monde, choisir celle où l’Islande est mise en évidence."></li>
+          </ul>
         </div>
-        <ul class="shots">
-          <li><img src="../apps/flagquest/fr/question.webp" width="540" height="960" loading="lazy" alt="Une question sur un drapeau : à quel pays appartient ce drapeau ? Trois réponses au choix."></li>
-          <li><img src="../apps/flagquest/fr/feedback.webp" width="540" height="960" loading="lazy" alt="Après la réponse : le drapeau, la forme et le pays mis en évidence sur la carte du monde."></li>
-          <li><img src="../apps/flagquest/fr/map.webp" width="540" height="960" loading="lazy" alt="Trouver le pays sur la carte : trois cartes du monde, choisir celle où l’Islande est mise en évidence."></li>
-        </ul>
         <ul class="points">
           <li>
-            <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>
             <div><h4>Sans publicité</h4><p>Pas de publicité, pas d’achat intégré, pas de compte.</p></div>
           </li>
           <li>
-            <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 8.5a14 14 0 0 1 19 0M5.5 12a9.5 9.5 0 0 1 13 0M9 15.5a4.5 4.5 0 0 1 6 0M12 19h.01M3 3l18 18"/></svg>
             <div><h4>Sans internet</h4><p>L’application n’a aucun accès à internet. Elle fonctionne dans l’avion comme chez mamie.</p></div>
           </li>
           <li>
-            <svg viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t3"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8.2-7.5 9.5-4.3-1.3-7.5-5-7.5-9.5V6z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg>
             <div><h4>Sans pistage</h4><p>Rien n’est collecté. La progression reste sur le téléphone.</p></div>
           </li>
         </ul>
       </article>
 
-      <article id="games" class="card app" aria-labelledby="games-title">
-        <div class="app-head">
-          <svg class="app-icon app-icon-tba" viewBox="0 0 1 .866" aria-hidden="true" focusable="false"><use class="tri" href="#t4"/></svg>
-          <div>
-            <p class="tier-label">Jeux</p>
-            <h3 id="games-title">Notre premier jeu</h3>
-            <p class="app-tagline">Nom bientôt dévoilé.</p>
+      <article id="games" class="card app teaser" aria-labelledby="games-title">
+        <div class="teaser-main">
+          <div class="app-head">
+            <svg class="app-icon app-icon-shapes" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle class="shape-a" cx="22" cy="22" r="9"/>
+              <path class="shape-b" d="M42 12.5l10 17.5H32z"/>
+              <rect class="shape-c" x="13.5" y="34" width="17" height="17" rx="2.5"/>
+              <path class="shape-d" d="M42 33l9.5 9.5L42 52l-9.5-9.5z"/>
+            </svg>
+            <div>
+              <p class="tier-label">Jeux</p>
+              <h3 id="games-title" lang="en">Ace of Shapes</h3>
+              <p class="app-tagline">Notre premier jeu gratuit.</p>
+            </div>
+          </div>
+          <span class="badge">Bientôt sur Google Play</span>
+          <div class="prose">
+            <p><span lang="en">Ace of Shapes</span> est gratuit, financé par la publicité et des achats intégrés. Ses captures d’écran et ses informations de confidentialité seront publiées ici avant sa sortie.</p>
           </div>
         </div>
-        <span class="badge">En préparation</span>
-        <div class="prose">
-          <p>Nous préparons un jeu gratuit, financé par la publicité et des achats intégrés. Son nom, des captures d’écran et ses informations de confidentialité seront publiés ici avant sa sortie.</p>
+        <div class="teaser-art" aria-hidden="true">
+          <svg viewBox="0 0 256 120" focusable="false">
+            <circle class="shape-a" cx="32" cy="60" r="24"/>
+            <path class="shape-b" d="M98 36l26 46H72z"/>
+            <rect class="shape-c" x="140" y="38" width="44" height="44" rx="6"/>
+            <path class="shape-d" d="M224 34l24 26-24 26-24-26z"/>
+          </svg>
         </div>
       </article>
     </section>
 
     <section id="contact" class="wrap contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Nous écrire</h2>
-      <div class="prose">
-        <p>Une question, une idée, un avis sur nos applications ? Nous serions ravis de vous lire.</p>
+      <div class="card">
+        <h2 id="contact-title">Nous écrire</h2>
+        <div class="prose">
+          <p>Une question, une idée, un avis sur nos applications ? Nous serions ravis de vous lire.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="#contact" data-mail>Envoyer un e-mail</a>
+        </div>
+        <p class="mail-line"><a href="#contact" data-mail data-mail-text>heightcube+website (arobase) gmail (point) com</a></p>
       </div>
-      <div class="actions">
-        <a class="btn" href="#contact" data-mail>Nous écrire</a>
-      </div>
-      <p class="mail-line"><a href="#contact" data-mail data-mail-text>heightcube+website (arobase) gmail (point) com</a></p>
     </section>
 
-    <div class="wrap divider" aria-hidden="true"><svg viewBox="0 0 1 .866"><use class="tri" href="#t4"/></svg></div>
-
-    <section id="privacy" class="wrap" aria-labelledby="privacy-title">
-      <h2 id="privacy-title">Confidentialité</h2>
-      <div class="prose">
-        <p>Nos applis pour enfants n’affichent aucune publicité, n’ont pas besoin d’internet et ne collectent aucune donnée personnelle. Nos jeux publieront leurs informations de confidentialité avant leur sortie. Ce site n’utilise ni cookies ni traceurs. <a href="privacy.html">Lire notre politique de confidentialité</a></p>
+    <section id="privacy" class="wrap privacy-note" aria-labelledby="privacy-title">
+      <div class="wrap-inner">
+        <h2 id="privacy-title">Confidentialité</h2>
+        <div class="prose">
+          <p>Nos applis pour enfants n’affichent aucune publicité, n’ont pas besoin d’internet et ne collectent aucune donnée personnelle. Nos jeux publieront leurs informations de confidentialité avant leur sortie. Ce site n’utilise ni cookies ni traceurs. <a href="privacy.html">Lire notre politique de confidentialité</a></p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>© 2026 HeightCube, Genève, Suisse.</p>
+      <p class="footer-brand"><img src="../favicon.svg" width="24" height="24" alt="">© 2026 HeightCube, Genève, Suisse.</p>
       <p><a href="privacy.html">Politique de confidentialité</a></p>
     </div>
   </footer>
