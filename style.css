@@ -518,6 +518,7 @@ main .policy-page { padding-block: var(--s-7) var(--s-8); }
   padding-top: 2rem;
   border-top: 1px solid var(--line);
 }
+.policy h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.25rem; }
 .policy p, .policy li { color: var(--muted); }
 .policy strong { color: var(--text); }
 .policy ul { padding-left: 1.25rem; }
