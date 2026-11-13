@@ -17,6 +17,7 @@ Plain HTML and CSS, no build step, no external requests.
   (`.hero-art`) and in the footer, so it switches to its dark colors on its own.
 - `apps/flagquest/` — FlagQuest 4 Kids icon and screenshots (`en/`, `fr/`), shown in the Apps section.
 - `play-console/` — Play Console developer icon and header image, with the scripts that make them.
+- `app-ads.txt` — authorised ad sellers (AdMob publisher `pub-3710520883558713`), read by AdMob from the developer website set in Play Console. Must stay at the site root; add a line per new ad network.
 
 ## Editing content
 
