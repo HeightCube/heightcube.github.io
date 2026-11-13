@@ -9,6 +9,7 @@ Plain HTML and CSS, no build step, no external requests.
 - `privacy.html` — the full privacy policy, with the same header and footer as `index.html`.
 - `fr/index.html`, `fr/privacy.html` — the French versions of both pages.
 - `de/privacy.html` — the German privacy policy (there is no German home page: its header links go to the English `index.html`). Keep it in step with `privacy.html`; German uses the email fallback `(at)` / `(Punkt)`. The EN and FR privacy pages link it (DE in the header, `hreflang="de"`).
+- `es/privacy.html`, `pt-br/privacy.html` — Spanish and Brazilian Portuguese privacy policies (the game's languages), built like the German one: header links go to the English home page, EN link in the header. Every privacy page lists all five languages in a `.policy-langs` line under the date and in `<link rel="alternate" hreflang>`.
 - `site.js` — the email script, shared by every page.
 - `style.css` — all styles, including colors and dark mode. The custom properties at the top are
   the design tokens: surfaces, text, the green accent, logo colors, type sizes (`--fs-*`), the
@@ -60,7 +61,7 @@ Plain HTML and CSS, no build step, no external requests.
   (`['heightcube', 'website'].join('+') + '@' + ...`) so it is not in the HTML as plain text.
   Update that line, and the `(at)` / `(dot)` (French: `(arobase)` / `(point)`) fallback text
   inside the `data-mail` links of every page.
-- **Privacy policy:** edit `privacy.html`, `fr/privacy.html` and `de/privacy.html` together, and update the effective date in all three when you change it.
+- **Privacy policy:** edit `privacy.html`, `fr/privacy.html`, `de/privacy.html`, `es/privacy.html` and `pt-br/privacy.html` together, and update the effective date in all five when you change it. Add a language when a game is translated into it (Ace of Shapes: EN, FR, ES, PT-BR, DE).
   The header and footer are copied from `index.html`; keep the pages in sync (the footer's small
   logo is `favicon.svg`, `../favicon.svg` in `fr/` and `de/`).
 - **Logo:** the cube paths appear inline in the header of every page, and in `favicon.svg`.
