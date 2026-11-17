@@ -40,17 +40,13 @@ Plain HTML and CSS, no build step, no external requests.
   play, supported by ads and in-app purchases). Then one card per app (`article.card.app`,
   `#kids` and `#games`). The no-ads / no-data promises belong to the kids line only, here and in
   the privacy policy; don't state them for the whole studio.
-- **The game:** Ace of Shapes, the studio's first free-to-play game (card `#games`, class `teaser`,
-  marked "Coming soon to Google Play"). Its icon is a simple inline-SVG shape motif (`.app-icon-shapes`,
-  colored with the `--shape-a` … `--shape-c` tokens and `--accent`, kept at 3:1 or more on `--surface-2`), repeated larger in `.teaser-art` on wide screens; replace
-  them with the real icon and screenshots when they exist. Don't describe its gameplay until it is
-  announced. Before it is released, fill in section 3 of the privacy policy (all three languages)
-  with the ad and payment services it uses and the data they process.
+- **The game:** Ace of Shapes, the studio's first free-to-play game (card `#games`, same layout as FlagQuest): icon `apps/aceofshapes/icon.png`,
+  3 screenshots from `apps/aceofshapes/shots/` (the press kit's, 540×1080), three points (free to play, no pay-to-win, quick runs) and a
+  link to the press kit `aceofshapes/`. Live on Google Play since 2026-11-17. The old teaser styles (`.teaser*`, `.app-icon-shapes`) are unused.
 - **App screenshots:** 540×960 WebP, made from the store screenshots in the app's repo
   (`store-assets/screenshots/<lang>/`). Update the `alt` texts if the pictures change.
-- **Google Play link:** FlagQuest 4 Kids and Ace of Shapes are marked "Coming soon" (`badge` in each
-  Apps card) until their listing is live; for FlagQuest, then replace the badge with a link to
-  `https://play.google.com/store/apps/details?id=com.heightcube.flagquest`.
+- **Google Play link:** both apps are live: the badge is a link (`a.badge badge-link`) to
+  `https://play.google.com/store/apps/details?id=com.heightcube.flagquest` / `…aceofshapes` (`&hl=fr` on the French page).
 - **Colors:** change the custom properties at the top of `style.css` (`:root` for light mode,
   the `prefers-color-scheme: dark` block for dark mode). Keep text contrast at WCAG AA (4.5:1),
   including `--accent` and `--link` on `--surface-2`, and `--accent-ink` on `--accent-soft`
