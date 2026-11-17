@@ -537,3 +537,22 @@ main .policy-page { padding-block: var(--s-7) var(--s-8); }
 .site-footer p { margin: 0; }
 .footer-brand { display: inline-flex; align-items: center; gap: 0.6rem; }
 .footer-brand img { width: 1.5rem; height: 1.5rem; }
+
+/* Press kit (aceofshapes/) */
+.presskit { padding-block: var(--s-7) var(--s-8); }
+.presskit h2 { font-size: clamp(1.3rem, 3.5vw, 1.6rem); margin-top: var(--s-7); }
+.pk-head { display: flex; gap: var(--s-5); align-items: center; flex-wrap: wrap; }
+.pk-head h1 { font-size: clamp(2rem, 6vw, 3rem); margin: var(--s-1) 0; }
+.pk-icon { width: 112px; height: 112px; border-radius: 24px; flex: none; }
+.pk-grid { display: grid; gap: var(--s-6); margin-top: var(--s-6); }
+@media (min-width: 52em) { .pk-grid { grid-template-columns: minmax(16rem, 1fr) 2fr; align-items: start; } .pk-desc h2:first-child { margin-top: 0; } }
+.pk-facts h2 { margin-top: 0; }
+.pk-facts dl { margin: 0; display: grid; gap: var(--s-1); }
+.pk-facts dt { font-weight: 700; color: var(--text); margin-top: var(--s-2); }
+.pk-facts dd { margin: 0; color: var(--muted); }
+.pk-gallery { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s-3); grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 40em) { .pk-gallery { grid-template-columns: repeat(4, 1fr); } }
+.pk-gallery img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--line); }
+.pk-downloads { padding-left: 1.25rem; }
+.pk-downloads li { margin-bottom: var(--s-2); }
+.pk-note { color: var(--muted); max-width: 40rem; }

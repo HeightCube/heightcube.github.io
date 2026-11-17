@@ -17,6 +17,7 @@ Plain HTML and CSS, no build step, no external requests.
 - `favicon.svg` — the logo used as the browser icon. It is also shown as an image in the home hero
   (`.hero-art`) and in the footer, so it switches to its dark colors on its own.
 - `apps/flagquest/` — FlagQuest 4 Kids icon and screenshots (`en/`, `fr/`), shown in the Apps section.
+- `aceofshapes/index.html` — Ace of Shapes press kit (EN): facts, description (= the store listing), screenshots, downloads. Same header/footer as the privacy page, paths with `../`. Assets in `apps/aceofshapes/` (icon, feature graphic, `shots/*.webp` 540×1080 from the store screenshots, `aceofshapes-presskit.zip` with the full-size PNGs): regenerate them when the store art changes (icon redo pending).
 - `play-console/` — Play Console developer icon and header image, with the scripts that make them.
 - `app-ads.txt` — authorised ad sellers (AdMob publisher `pub-3710520883558713`), read by AdMob from the developer website set in Play Console. Must stay at the site root; add a line per new ad network.
 
