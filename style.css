@@ -561,3 +561,8 @@ main .policy-page { padding-block: var(--s-7) var(--s-8); }
 a.badge-link { text-decoration: none; }
 a.badge-link::before { border-radius: 2px; width: 0; height: 0; background: none; border-style: solid; border-width: 0.3rem 0 0.3rem 0.5rem; border-color: transparent transparent transparent currentColor; }
 a.badge-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Official Google Play badge (Google brand rules: unmodified, trademark line in the footer) */
+.play-badge { display: inline-block; line-height: 0; }
+.play-badge img { height: 4rem; width: auto; margin-left: -0.4rem; }
+.tm-note { font-size: var(--fs-sm); color: var(--muted); margin: var(--s-3) 0 0; }

@@ -45,7 +45,7 @@ Plain HTML and CSS, no build step, no external requests.
   link to the press kit `aceofshapes/`. Live on Google Play since 2026-11-17. The old teaser styles (`.teaser*`, `.app-icon-shapes`) are unused.
 - **App screenshots:** 540×960 WebP, made from the store screenshots in the app's repo
   (`store-assets/screenshots/<lang>/`). Update the `alt` texts if the pictures change.
-- **Google Play link:** both apps are live: the badge is a link (`a.badge badge-link`) to
+- **Google Play link:** both apps are live: the official Google Play badge (`a.play-badge` with `apps/google-play-en.png` / `-fr.png`, downloaded unmodified from Google's badge page; Google brand rules require the footer line `.tm-note` "Google Play and the Google Play logo are trademarks of Google LLC.") links to
   `https://play.google.com/store/apps/details?id=com.heightcube.flagquest` / `…aceofshapes` (`&hl=fr` on the French page).
 - **Colors:** change the custom properties at the top of `style.css` (`:root` for light mode,
   the `prefers-color-scheme: dark` block for dark mode). Keep text contrast at WCAG AA (4.5:1),
